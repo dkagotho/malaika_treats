@@ -42,7 +42,7 @@ const SideBar = () => {
         </h3> */}
         <div className="mt-10 mr-10">
           <span>
-            <img src="mk-logo.ico" />
+            <img src="mk-logo.ico" alt="" />
           </span>
         </div>
         <ul className="text-gray-600">
