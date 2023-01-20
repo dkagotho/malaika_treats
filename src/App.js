@@ -1,11 +1,12 @@
 import "./App.css";
 import SideBar from "./components/SideBar";
+import Header from "./components/Header";
 
 function App() {
   return (
-    <div className="mx-auto mt-8">
+    <div>
       <SideBar />
-      <h1 className="text-4xl text-center">Malaika treats!!</h1>
+      <Header />
     </div>
   );
 }
