@@ -147,14 +147,14 @@ const Menus = [
 const SideBar = () => {
   const [open, setOpen] = useState(true);
   const [subMenuOpen, setSubMenuOpen] = useState(false);
-  const toggleSidebar = () => {
+  const toggleSideBar = () => {
     setOpen(!open);
   };
   return (
-    <div className=" h-screen flex items-end justify-start ">
+    <div className="lg:mt-7 h-screen  flex items-end justify-start ">
       <button
         className="fixed lg:hidden z-90 bottom-10 right-8 bg-[#FFCBC4] w-10 h-10 rounded-full drop-shadow-lg flex justify-center items-center text-white text-4xl text-gray-700 duration-500"
-        onClick={toggleSidebar}
+        onClick={toggleSideBar}
       >
         <span class="text-[#778899]">
           <svg
@@ -176,7 +176,7 @@ const SideBar = () => {
           open ? "w-48 px-2 " : "w-0 "
         } lg:w-72 bg-[#FFCBC4] h-screen   relative duration-500`}
       >
-        <div className=" justify-center mt-3">
+        <div className=" justify-center">
           <h1 className={`text-center duration-200 ${!open && "invisible"}`}>
             <img
               className="mt-10 object-scale-down h-48 w-96"
@@ -185,10 +185,10 @@ const SideBar = () => {
             />
           </h1>
         </div>
-        {/* bugy code, I can't get the ul to close at the same time as the Image */}
+        {/* buggy code, I can't get the ul to close at the same time as the Image */}
         <div className="justify-center">
           <ul
-            className={`hover:text-gray-700 duration-500 text-[#778899] duration-200 pt-6 ${
+            className={`hover:text-gray-700 text-[#778899] duration-200 pt-6 ${
               !open && "invisible"
             }`}
           >
@@ -197,22 +197,25 @@ const SideBar = () => {
                 <li
                   key={index}
                   className={`flex p-2 cursor-pointer hover:text-gray-700 duration-500 text-[#778899] text-sm items-center gap-x-4 border-b-2 border-[#778899] hover:border-gray-700 duration-500"
-                ${Menu.gap ? "mt-9" : "mt-2"}  `}
+                ${Menu.gap ? "mt-9" : "mt-2"}`}
                 >
+                  {/* when you click on the arrow all menus open */}
                   {Menu.icon ? Menu.icon : <MdOutlineDashboard />}
                   <span className="flex-1">{Menu.title}</span>
                   {Menu.subMenus && (
                     <BsChevronDown
                       onClick={() => setSubMenuOpen(!subMenuOpen)}
+                      // onMouseEnter={() => setSubMenuOpen(true)}
+                      // onMouseEnter={() => setSubMenuOpen(false)}
                       className={`${subMenuOpen && "rotate-180"}`}
                     />
                   )}
                 </li>
                 {Menu.subMenus && subMenuOpen && open && (
                   <ul>
-                    {Menu.subMenus.map((subMenuItem, idx) => (
+                    {Menu.subMenus.map((subMenuItem, idex) => (
                       <li
-                        key={idx}
+                        key={idex}
                         className="flex px-5 cursor-pointer text-center text-sm hover:text-gray-700 duration-500 text-[#778899] py-1"
                       >
                         {subMenuItem.title}
