@@ -1,59 +1,231 @@
 import { useState } from "react";
+import { MdOutlineDashboard } from "react-icons/md";
+import {
+  GiStairsCake,
+  GiCupcake,
+  GiBrokenHeartZone,
+  GiStrawberry,
+} from "react-icons/gi";
+import { BiBuildingHouse } from "react-icons/bi";
+import { BsChevronDown } from "react-icons/bs";
+
+const Menus = [
+  {
+    title: "CAKES",
+    src: "cake",
+    icon: <GiStairsCake />,
+    subMenus: [
+      {
+        title: "DESIGNER",
+        src: "/cakes/designer",
+
+        cName: "designer",
+      },
+      {
+        title: "FLAVORS",
+        src: "/cakes/flavor",
+
+        cName: "flavor",
+      },
+    ],
+  },
+  {
+    title: "CUPCAKES & CAKEPOPS",
+    src: "Chat",
+    icon: <GiCupcake />,
+    subMenus: [
+      {
+        title: "DOZEN",
+        src: "/cupcakes/cupcakes",
+
+        cName: "sub-nav",
+      },
+      {
+        title: "6 PACK",
+        src: "/cupcakes/cupcakes",
+
+        cName: "sub-nav",
+      },
+      {
+        title: "CAKEPOPS",
+        src: "/cakepops/cakepops",
+
+        cName: "sub-nav",
+      },
+    ],
+  },
+  {
+    title: "CHOCOLATE STRAWBERRIES",
+    src: "chocoberries",
+    icon: <GiStrawberry />,
+    subMenus: [
+      {
+        title: "DOZEN",
+        src: "/chocoberries/dozen",
+
+        cName: "sub-nav",
+      },
+      {
+        title: "BOUQUET",
+        src: "/chocoberries/bouquet",
+
+        cName: "sub-nav",
+      },
+    ],
+  },
+  {
+    title: "BREAKABLE HEARTS",
+    src: "BH",
+    icon: <GiBrokenHeartZone />,
+    subMenus: [
+      {
+        title: "BH 10 STRABERRIES",
+        src: "/bh/10",
+
+        cName: "sub-nav",
+      },
+      {
+        title: "BH 12 STRABERRIES",
+        src: "/bh/12",
+
+        cName: "sub-nav",
+      },
+      {
+        title: "BH CUSTOM GIFT",
+        src: "/bhs/custom",
+      },
+    ],
+  },
+  {
+    title: "BOTTLE BOUQUETS",
+    src: "Bottle bouquets",
+    icon: <GiBrokenHeartZone />,
+    subMenus: [
+      {
+        title: "LARGE BOTTLES",
+        src: "/lb/large-bottles",
+
+        cName: "sub-nav",
+      },
+      {
+        title: "50ML BOTTLES",
+        src: "/sb/50ml-bottles",
+
+        cName: "sub-nav",
+      },
+      {
+        title: "Custom",
+        src: "/bb/custom",
+      },
+    ],
+  },
+  {
+    title: "COMPANY INFO",
+    src: "building",
+    icon: <BiBuildingHouse />,
+    subMenus: [
+      {
+        title: "Service 1",
+        src: "/services/services1",
+
+        cName: "sub-nav",
+      },
+      {
+        title: "Service 2",
+        src: "/services/services2",
+
+        cName: "sub-nav",
+      },
+      {
+        title: "Service 3",
+        src: "/services/services3",
+      },
+    ],
+  },
+];
 
 const SideBar = () => {
-  const [showSidebar, setShowSidebar] = useState(false);
-  let Links = [
-    { name: "CAKES", link: "/" },
-    { name: "CUPCAKES & CAKEPOPS", link: "/" },
-    { name: "CHOCOLATE STRAWBERRIES", link: "/" },
-    { name: "BREAKABLE HEARTS", link: "/" },
-  ];
+  const [open, setOpen] = useState(true);
+  const [subMenuOpen, setSubMenuOpen] = useState(false);
+  const toggleSidebar = () => {
+    setOpen(!open);
+  };
   return (
-    <>
-      {showSidebar ? (
-        <button
-          className="flex text-4xl text-white items-center cursor-pointer fixed right-10 top-6 z-50"
-          onClick={() => setShowSidebar(!showSidebar)}
-        >
-          <p className="text-base ">x</p>
-        </button>
-      ) : (
-        <svg
-          onClick={() => setShowSidebar(!showSidebar)}
-          className="fixed  z-30 flex items-center cursor-pointer right-10 top-6"
-          fill="#FFCBA5"
-          viewBox="0 0 100 80"
-          width="40"
-          height="40"
-        >
-          <rect width="100" height="10"></rect>
-          <rect y="30" width="100" height="10"></rect>
-          <rect y="60" width="100" height="10"></rect>
-        </svg>
-      )}
+    <div className=" h-screen flex items-end justify-start ">
+      <button
+        className="fixed lg:hidden z-90 bottom-10 right-8 bg-[#FFCBC4] w-10 h-10 rounded-full drop-shadow-lg flex justify-center items-center text-white text-4xl text-gray-700 duration-500"
+        onClick={toggleSidebar}
+      >
+        <span class="text-[#778899]">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            class="w-6 m-auto"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3.646 9.146a.5.5 0 0 1 .708 0L8 12.793l3.646-3.647a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 0-.708zm0-2.292a.5.5 0 0 0 .708 0L8 3.207l3.646 3.647a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 0 0 0 .708z"
+            />
+          </svg>
+        </span>
+      </button>
 
       <div
-        className={`top-0 right-0 w-[18vw] bg-[#FFCBC4] p-7 pl-20 text-white fixed h-full z-40  ease-in-out duration-300 ${
-          showSidebar ? "translate-x-0 " : "translate-x-full"
-        }`}
+        className={` ${
+          open ? "w-48 px-2 " : "w-0 "
+        } lg:w-72 bg-[#FFCBC4] h-screen   relative duration-500`}
       >
-        {/* <h3 className="mt-20 text-3xl font-semibold text-white">
-          I am a sidebar
-        </h3> */}
-        <div className="mt-10 mr-10">
-          <span>
-            <img src="mk-logo.ico" alt="" />
-          </span>
+        <div className=" justify-center mt-3">
+          <h1 className={`text-center duration-200 ${!open && "invisible"}`}>
+            <img
+              className="mt-10 object-scale-down h-48 w-96"
+              src="mk-logo.ico"
+              alt="logo"
+            />
+          </h1>
         </div>
-        <ul className="text-gray-600">
-          {Links.map((link) => (
-            <li>
-              <a href={link.link}>{link.name}</a>
-            </li>
-          ))}
-        </ul>
+        {/* bugy code, I can't get the ul to close at the same time as the Image */}
+        <div className="justify-center">
+          <ul
+            className={`hover:text-gray-700 duration-500 text-[#778899] duration-200 pt-6 ${
+              !open && "invisible"
+            }`}
+          >
+            {Menus.map((Menu, index) => (
+              <>
+                <li
+                  key={index}
+                  className={`flex p-2 cursor-pointer hover:text-gray-700 duration-500 text-[#778899] text-sm items-center gap-x-4 border-b-2 border-[#778899] hover:border-gray-700 duration-500"
+                ${Menu.gap ? "mt-9" : "mt-2"}  `}
+                >
+                  {Menu.icon ? Menu.icon : <MdOutlineDashboard />}
+                  <span className="flex-1">{Menu.title}</span>
+                  {Menu.subMenus && (
+                    <BsChevronDown
+                      onClick={() => setSubMenuOpen(!subMenuOpen)}
+                      className={`${subMenuOpen && "rotate-180"}`}
+                    />
+                  )}
+                </li>
+                {Menu.subMenus && subMenuOpen && open && (
+                  <ul>
+                    {Menu.subMenus.map((subMenuItem, idx) => (
+                      <li
+                        key={idx}
+                        className="flex px-5 cursor-pointer text-center text-sm hover:text-gray-700 duration-500 text-[#778899] py-1"
+                      >
+                        {subMenuItem.title}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </>
+            ))}
+          </ul>
+        </div>
       </div>
-    </>
+    </div>
   );
 };
 
