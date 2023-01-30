@@ -8,6 +8,7 @@ import {
 } from "react-icons/gi";
 import { BiBuildingHouse } from "react-icons/bi";
 import { BsChevronDown } from "react-icons/bs";
+// import { Link } from "react-router-dom";
 
 const Menus = [
   {
@@ -151,7 +152,7 @@ const SideBar = () => {
     setOpen(!open);
   };
   return (
-    <div className="lg:mt-7 h-screen  flex items-end justify-start ">
+    <div className="mt-11 h-screen  flex items-end justify-start sm:mt-7">
       <button
         className="fixed lg:hidden z-90 bottom-10 right-8 bg-[#FFCBC4] w-10 h-10 rounded-full drop-shadow-lg flex justify-center items-center text-white text-4xl text-gray-700 duration-500"
         onClick={toggleSideBar}
