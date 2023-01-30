@@ -229,6 +229,72 @@ const SideBar = () => {
           </ul>
         </div>
       </div>
+      <div className="container mx-auto h-screen overflow-y-auto no-scrollbar">
+        <div className="grid grid-cols-1 gap-6 mb-6 lg:columns-5">
+          <div className="w-full px-4 py-5 bg-white shadow">
+            <div className="text-gray-500 truncate">
+              <h2>Cellebration Cakes</h2>
+              <h2>Beautiful Designs To Choose From</h2>
+            </div>
+            <div className="mt-1 text-3xl font-semibold text-gray-900">
+              <img
+                className="mt-10 object-scale-down h-48 w-96"
+                src="mk-logo.ico"
+                alt="logo"
+              />
+            </div>
+          </div>
+          <div className="w-full px-4 py-5 bg-white shadow">
+            <div className="text-sm font-medium text-gray-500 truncate">
+              Chocolate covered strawberries
+            </div>
+            <div className="mt-1 text-3xl font-semibold text-gray-900">
+              <img
+                className="mt-10 object-scale-down h-48 w-96"
+                src="mk-logo.ico"
+                alt="logo"
+              />
+            </div>
+          </div>
+          <div className="w-full px-4 py-5 bg-white shadow">
+            <div className="text-sm font-medium text-gray-500 truncate">
+              Breakable Hearts
+            </div>
+            <div className="mt-1 text-3xl font-semibold text-gray-900">
+              <img
+                className="mt-10 object-scale-down h-48 w-96"
+                src="mk-logo.ico"
+                alt="logo"
+              />
+            </div>
+          </div>
+          <div className="w-full px-4 py-5 bg-white shadow overflow-auto">
+            <div className="text-sm font-medium text-gray-500 truncate">
+              Baking from the Heart
+            </div>
+            <div className="mt-1 text-3xl font-semibold text-gray-900">
+              <img
+                className="mt-10 object-scale-down h-48 w-96"
+                src="mk-logo.ico"
+                alt="logo"
+              />
+            </div>
+          </div>
+          <div className="w-full px-4 py-5 bg-white shadow">
+            <div className="text-gray-500 truncate">
+              <h1> @malaikatreats</h1>
+              <h1>Follow us on Instagram</h1>
+            </div>
+            <div className="mt-1 text-3xl font-semibold text-gray-900">
+              <img
+                className="mt-10 object-scale-down h-48 w-96"
+                src="mk-logo.ico"
+                alt="logo"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
