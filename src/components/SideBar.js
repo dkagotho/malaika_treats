@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { MdOutlineDashboard } from "react-icons/md";
 import {
   GiStairsCake,
   GiCupcake,
@@ -152,7 +151,7 @@ const SideBar = () => {
     setOpen(!open);
   };
   return (
-    <div className="mt-11 h-screen  flex items-end justify-start sm:mt-7">
+    <div className="mt-11 h-screen flex items-end justify-start sm:mt-7">
       <button
         className="fixed lg:hidden z-90 bottom-10 right-8 bg-[#FFCBC4] w-10 h-10 rounded-full drop-shadow-lg flex justify-center items-center text-white text-4xl text-gray-700 duration-500"
         onClick={toggleSideBar}
@@ -174,10 +173,10 @@ const SideBar = () => {
 
       <div
         className={` ${
-          open ? "w-48 px-2 " : "w-0 "
-        } lg:w-72 bg-[#FFCBC4] h-screen   relative duration-500`}
+          open ? "w-48 px-2" : "w-0 "
+        } lg:w-72 bg-[#FFCBC4] h-screen relative duration-500`}
       >
-        <div className=" justify-center">
+        <div className="justify-center">
           <h1 className={`text-center duration-200 ${!open && "invisible"}`}>
             <img
               className="mt-10 object-scale-down h-48 w-96"
@@ -201,7 +200,7 @@ const SideBar = () => {
                 ${Menu.gap ? "mt-9" : "mt-2"}`}
                 >
                   {/* when you click on the arrow all menus open */}
-                  {Menu.icon ? Menu.icon : <MdOutlineDashboard />}
+                  {Menu.icon}
                   <span className="flex-1">{Menu.title}</span>
                   {Menu.subMenus && (
                     <BsChevronDown
