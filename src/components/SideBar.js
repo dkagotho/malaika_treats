@@ -179,7 +179,7 @@ const SideBar = () => {
         <div className="justify-center">
           <h1 className={`text-center duration-200 ${!open && "invisible"}`}>
             <img
-              className="mt-10 object-scale-down h-48 w-96"
+              className="mt-10 object-scale-down h-49 w-97"
               src="mk-logo.ico"
               alt="logo"
             />
