@@ -7,6 +7,9 @@ import {
 } from "react-icons/gi";
 import { BiBuildingHouse } from "react-icons/bi";
 import { BsChevronDown } from "react-icons/bs";
+import purplegold from "../assets/purplegold.jpg";
+import engaged from "../assets/engaged.MOV";
+import bbh from "../assets/bbh.jpg";
 // import { Link } from "react-router-dom";
 
 const Menus = [
@@ -151,7 +154,7 @@ const SideBar = () => {
     setOpen(!open);
   };
   return (
-    <div className="mt-11 h-screen flex items-end justify-start sm:mt-7">
+    <div className="mt-7 h-screen flex items-end justify-start sm:absolute">
       <button
         className="fixed lg:hidden z-90 bottom-10 right-8 bg-[#FFCBC4] w-10 h-10 rounded-full drop-shadow-lg flex justify-center items-center text-white text-4xl text-gray-700 duration-500"
         onClick={toggleSideBar}
@@ -230,12 +233,56 @@ const SideBar = () => {
       </div>
       <div className="container mx-auto h-screen overflow-y-auto no-scrollbar">
         <div className="grid grid-cols-1 gap-6 mb-6 lg:columns-5">
-          <div className="w-full px-4 py-5 bg-white shadow">
-            <div className="text-gray-500 truncate">
-              <h2>Cellebration Cakes</h2>
-              <h2>Beautiful Designs To Choose From</h2>
+          <div className="w-full bg-[#C0C0C0]">
+            <div className="text-sm sm:text-3xl font-semibold">
+              <div className="relative text-[#EDEADE]">
+                {/* <h2 className="fixed">Cellebration Cakes</h2> */}
+                <h2 className="absolute ml-2 mt-2">
+                  Beautiful Designs To Choose From.
+                </h2>
+                <button className="absolute text-sm ml-2 mt-12 bg-transparent hover:[#778899] text-[#EDEADE] font-semibold hover:text-gray-700 py-2 px-4 border border-[#EDEADE] hover:border-transparent rounded hover:bg-[#F7EF8A">
+                  See More
+                </button>
+              </div>
+              <video
+                className="w-full aspect-video"
+                src={engaged}
+                autoPlay
+                loop
+                muted
+                alt="video"
+              />
             </div>
-            <div className="mt-1 text-3xl font-semibold text-gray-900">
+          </div>
+          <div className="w-full">
+            <div className="text-sm mt-1 sm:text-3xl font-semibold">
+              <div className="relative text-[#900C3F]">
+                <h2 className="absolute ml-2 mt-2">
+                  Chocolate covered strawberries
+                </h2>
+                <button className="absolute text-sm ml-2 mt-12 bg-transparent hover:[#900C3F] text-[#900C3F] font-semibold hover:text-white py-2 px-4 border border-[#900C3F] hover:border-transparent rounded hover:bg-[#bc0f52]">
+                  See More
+                </button>
+              </div>
+              <img className="h-[100%] w-[100%]" src={purplegold} alt="choco" />
+            </div>
+          </div>
+          <div className="w-full">
+            <div className="text-sm mt-1 sm:text-3xl font-semibold">
+              <div className="relative text-[#bc0f52]">
+                <h2 className="absolute ml-2 mt-2">Breakable Heart</h2>
+                <button className="absolute text-sm ml-2 mt-12 bg-transparent hover:[#900C3F] text-[#900C3F] font-semibold hover:text-white py-2 px-4 border border-[#900C3F] hover:border-transparent rounded hover:bg-[#bc0f52]">
+                  Shop Now
+                </button>
+              </div>
+              <img className="h-[100%] w-[100%]" src={bbh} alt="logo" />
+            </div>
+          </div>
+          <div className="w-full">
+            <div className="text-sm mt-1 sm:text-3xl font-semibold">
+              <div className="relative text-gray-700">
+                <h2 className="ml-2 mt-2">Made with love</h2>
+              </div>{" "}
               <img
                 className="mt-10 object-scale-down h-48 w-96"
                 src="mk-logo.ico"
@@ -243,48 +290,11 @@ const SideBar = () => {
               />
             </div>
           </div>
-          <div className="w-full px-4 py-5 bg-white shadow">
-            <div className="text-sm font-medium text-gray-500 truncate">
-              Chocolate covered strawberries
-            </div>
-            <div className="mt-1 text-3xl font-semibold text-gray-900">
-              <img
-                className="mt-10 object-scale-down h-48 w-96"
-                src="mk-logo.ico"
-                alt="logo"
-              />
-            </div>
-          </div>
-          <div className="w-full px-4 py-5 bg-white shadow">
-            <div className="text-sm font-medium text-gray-500 truncate">
-              Breakable Hearts
-            </div>
-            <div className="mt-1 text-3xl font-semibold text-gray-900">
-              <img
-                className="mt-10 object-scale-down h-48 w-96"
-                src="mk-logo.ico"
-                alt="logo"
-              />
-            </div>
-          </div>
-          <div className="w-full px-4 py-5 bg-white shadow overflow-auto">
-            <div className="text-sm font-medium text-gray-500 truncate">
-              Baking from the Heart
-            </div>
-            <div className="mt-1 text-3xl font-semibold text-gray-900">
-              <img
-                className="mt-10 object-scale-down h-48 w-96"
-                src="mk-logo.ico"
-                alt="logo"
-              />
-            </div>
-          </div>
-          <div className="w-full px-4 py-5 bg-white shadow">
-            <div className="text-gray-500 truncate">
-              <h1> @malaikatreats</h1>
-              <h1>Follow us on Instagram</h1>
-            </div>
-            <div className="mt-1 text-3xl font-semibold text-gray-900">
+          <div className="w-full"></div>
+          <div className="text-sm mt-1 sm:text-3xl font-semibold">
+            <div className="relative text-gray-700">
+              <h2 className="ml-2 mt-2"> @malaikatreats</h2>
+              <h2 className="ml-2 mt-2">Follow us on Instagram</h2>{" "}
               <img
                 className="mt-10 object-scale-down h-48 w-96"
                 src="mk-logo.ico"
