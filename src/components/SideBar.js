@@ -10,6 +10,7 @@ import { BsChevronDown } from "react-icons/bs";
 import purplegold from "../assets/purplegold.jpg";
 import engaged from "../assets/engaged.MOV";
 import bbh from "../assets/bbh.jpg";
+// import silver from "../assets/silver.png";
 // import { Link } from "react-router-dom";
 
 const Menus = [
@@ -233,7 +234,7 @@ const SideBar = () => {
       </div>
       <div className="container mx-auto h-screen overflow-y-auto no-scrollbar">
         <div className="grid grid-cols-1 gap-6 mb-6 lg:columns-5">
-          <div className="w-full bg-[#C0C0C0]">
+          <div className="w-full bg-silver bg-no-repeat bg-cover">
             <div className="text-sm sm:text-3xl font-semibold">
               <div className="relative text-[#EDEADE]">
                 {/* <h2 className="fixed">Cellebration Cakes</h2> */}
