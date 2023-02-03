@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Cakes() {
   return (
     <div>
-      <h1>hi cakes</h1>
+      <Link to="/">[Home]</Link>
     </div>
   );
 }

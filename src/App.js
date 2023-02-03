@@ -1,25 +1,18 @@
 import React from "react";
 import "./App.css";
+import { Routes, Route } from "react-router-dom";
 import SideBar from "./components/SideBar";
 import Header from "./components/Header";
-// import ReactDOM from "react-dom/client";
-// import { BrowserRouter, Routes, Route } from "react-router-dom";
-// import Cakes from "./components/Cakes";
+import Cakes from "./pages/Cakes";
 
 function App() {
   return (
     <div>
-      <SideBar />
-      <Header />
+      <Routes>
+        <Route path="/" element={[<Header />, <SideBar />]} />
 
-      {/* <BrowserRouter>
-        <Routes>
-          <Route exact path="/" component={</>} />
-          <Route path="" component={< />} />
-          <Route path="" component={< />} />
-
-        </Routes>
-      </BrowserRouter> */}
+        <Route path="/cakes" element={<Cakes />} />
+      </Routes>
     </div>
   );
 }
