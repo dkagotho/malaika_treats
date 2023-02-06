@@ -283,7 +283,12 @@ const SideBar = () => {
             <div className="text-sm mt-1 sm:text-3xl font-semibold">
               <div className="relative text-gray-700">
                 <h2 className="ml-2 mt-2">Made with love</h2>
-              </div>{" "}
+              </div>
+              <div className="ml-2 mt-1 text-sm text-gray-700">
+                We are committed to quality which separates us from other
+                bakers. Every order is baked from scratch and handmade with love
+                and care with the finest ingredients.
+              </div>
               <img
                 className="mt-10 object-scale-down h-48 w-96"
                 src="mk-logo.ico"
