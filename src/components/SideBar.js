@@ -10,6 +10,7 @@ import { BsChevronDown } from "react-icons/bs";
 import purplegold from "../assets/purplegold.jpg";
 import engaged from "../assets/engaged.MP4";
 import bbh from "../assets/bbh.jpg";
+import counter from "../assets/counter.png";
 // import silver from "../assets/silver.png";
 // import { Link } from "react-router-dom";
 
@@ -233,7 +234,7 @@ const SideBar = () => {
         </div>
       </div>
       <div className="container mx-auto h-screen overflow-y-auto no-scrollbar">
-        <div className="grid grid-cols-1 gap-6 mb-6 lg:columns-5">
+        <div className="grid grid-cols-1 gap-2 mb-6 lg:columns-5 lg:gap-5">
           <div className="w-full bg-silver bg-no-repeat bg-cover">
             <div className="text-sm sm:text-3xl font-semibold">
               <div className="relative text-[#EDEADE]">
@@ -259,13 +260,33 @@ const SideBar = () => {
             <div className="text-sm mt-1 sm:text-3xl font-semibold">
               <div className="relative text-[#900C3F]">
                 <h2 className="absolute ml-2 mt-2">
-                  Chocolate covered strawberries
+                  Chocolate covered strawberries.
                 </h2>
                 <button className="absolute text-sm ml-2 mt-12 bg-transparent hover:[#900C3F] text-[#900C3F] font-semibold hover:text-white py-2 px-4 border border-[#900C3F] hover:border-transparent rounded hover:bg-[#bc0f52]">
                   See More
                 </button>
               </div>
               <img className="h-[100%] w-[100%]" src={purplegold} alt="choco" />
+            </div>
+          </div>
+          <div className="w-full">
+            <div className="font-semibold text-gray-700">
+              <img
+                className="h-[60%] w-[60%] float-right"
+                src={counter}
+                alt="counter"
+              />
+              <div className="relative fixed top-0 left-0 right-0">
+                <h2 className="text-sm sm:text-3xl ml-2 mt-2">
+                  Made with love.
+                </h2>
+
+                <div className="ml-2 mt-1 text-[12px] sm:text-m">
+                  We are committed to quality which separates us from other
+                  bakers. Every order is baked from scratch and handmade with
+                  love and care with the finest ingredients.
+                </div>
+              </div>
             </div>
           </div>
           <div className="w-full">
@@ -279,23 +300,7 @@ const SideBar = () => {
               <img className="h-[100%] w-[100%]" src={bbh} alt="logo" />
             </div>
           </div>
-          <div className="w-full">
-            <div className="text-sm mt-1 sm:text-3xl font-semibold">
-              <div className="relative text-gray-700">
-                <h2 className="ml-2 mt-2">Made with love</h2>
-              </div>
-              <div className="ml-2 mt-1 text-sm text-gray-700">
-                We are committed to quality which separates us from other
-                bakers. Every order is baked from scratch and handmade with love
-                and care with the finest ingredients.
-              </div>
-              <img
-                className="mt-10 object-scale-down h-48 w-96"
-                src="mk-logo.ico"
-                alt="logo"
-              />
-            </div>
-          </div>
+
           <div className="w-full"></div>
           <div className="text-sm mt-1 sm:text-3xl font-semibold">
             <div className="relative text-gray-700">
