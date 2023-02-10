@@ -300,17 +300,138 @@ const SideBar = () => {
               <img className="h-[100%] w-[100%]" src={bbh} alt="logo" />
             </div>
           </div>
+          <div className="w-full">
+            <div className="text-gray-700 font-semibold">
+              <div className="relative ">
+                <h2 className="text-sm mt-1 sm:text-3xl text-center">
+                  @malaikatreats
+                </h2>
+                <h2 className="text-xs mt-1 sm:text-m text-center">
+                  Follow us on Instagram
+                </h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-10">
+                  <div
+                    href="https://www.kindacode.com"
+                    class="flex flex-col bg-white drop-shadow hover:drop-shadow-lg hover:opacity-70 rounded-md"
+                  >
+                    <img
+                      src=" https://www.kindacode.com/wp-content/uploads/2022/07/kindacode-example.png"
+                      alt="Fiction Product"
+                      class="h-36 object-cover rounded-tl-md rounded-tr-md"
+                    />
 
-          <div className="w-full"></div>
-          <div className="text-sm mt-1 sm:text-3xl font-semibold">
-            <div className="relative text-gray-700">
-              <h2 className="ml-2 mt-2"> @malaikatreats</h2>
-              <h2 className="ml-2 mt-2">Follow us on Instagram</h2>{" "}
-              <img
-                className="mt-10 object-scale-down h-48 w-96"
-                src="mk-logo.ico"
-                alt="logo"
-              />
+                    <div class="px-3 py-2">
+                      <h1 class="font-semibold">Product One</h1>
+                      <p class="text-sm">$69.69</p>
+                    </div>
+                  </div>
+                  <div
+                    href="https://www.kindacode.com"
+                    class="flex flex-col bg-white drop-shadow hover:drop-shadow-lg hover:opacity-70 rounded-md"
+                  >
+                    <img
+                      src=" https://www.kindacode.com/wp-content/uploads/2022/07/kindacode-example.png"
+                      alt="Fiction Product"
+                      class="h-36 object-cover rounded-tl-md rounded-tr-md"
+                    />
+
+                    <div class="px-3 py-2">
+                      <h1 class="font-semibold">Product One</h1>
+                      <p class="text-sm">$69.69</p>
+                    </div>
+                  </div>
+                  <div
+                    href="https://www.kindacode.com"
+                    class="flex flex-col bg-white drop-shadow hover:drop-shadow-lg hover:opacity-70 rounded-md"
+                  >
+                    <img
+                      src=" https://www.kindacode.com/wp-content/uploads/2022/07/kindacode-example.png"
+                      alt="Fiction Product"
+                      class="h-36 object-cover rounded-tl-md rounded-tr-md"
+                    />
+
+                    <div class="px-3 py-2">
+                      <h1 class="font-semibold">Product One</h1>
+                      <p class="text-sm">$69.69</p>
+                    </div>
+                  </div>
+                  <div
+                    href="https://www.kindacode.com"
+                    class="flex flex-col bg-white drop-shadow hover:drop-shadow-lg hover:opacity-70 rounded-md"
+                  >
+                    <img
+                      src=" https://www.kindacode.com/wp-content/uploads/2022/07/kindacode-example.png"
+                      alt="Fiction Product"
+                      class="h-36 object-cover rounded-tl-md rounded-tr-md"
+                    />
+
+                    <div class="px-3 py-2">
+                      <h1 class="font-semibold">Product One</h1>
+                      <p class="text-sm">$69.69</p>
+                    </div>
+                  </div>
+                  <div
+                    href="https://www.kindacode.com"
+                    class="flex flex-col bg-white drop-shadow hover:drop-shadow-lg hover:opacity-70 rounded-md"
+                  >
+                    <img
+                      src=" https://www.kindacode.com/wp-content/uploads/2022/07/kindacode-example.png"
+                      alt="Fiction Product"
+                      class="h-36 object-cover rounded-tl-md rounded-tr-md"
+                    />
+
+                    <div class="px-3 py-2">
+                      <h1 class="font-semibold">Product One</h1>
+                      <p class="text-sm">$69.69</p>
+                    </div>
+                  </div>
+                  <div
+                    href="https://www.kindacode.com"
+                    class="flex flex-col bg-white drop-shadow hover:drop-shadow-lg hover:opacity-70 rounded-md"
+                  >
+                    <img
+                      src=" https://www.kindacode.com/wp-content/uploads/2022/07/kindacode-example.png"
+                      alt="Fiction Product"
+                      class="h-36 object-cover rounded-tl-md rounded-tr-md"
+                    />
+
+                    <div class="px-3 py-2">
+                      <h1 class="font-semibold">Product One</h1>
+                      <p class="text-sm">$69.69</p>
+                    </div>
+                  </div>
+                  <div
+                    href="https://www.kindacode.com"
+                    class="flex flex-col bg-white drop-shadow hover:drop-shadow-lg hover:opacity-70 rounded-md"
+                  >
+                    <img
+                      src=" https://www.kindacode.com/wp-content/uploads/2022/07/kindacode-example.png"
+                      alt="Fiction Product"
+                      class="h-36 object-cover rounded-tl-md rounded-tr-md"
+                    />
+
+                    <div class="px-3 py-2">
+                      <h1 class="font-semibold">Product One</h1>
+                      <p class="text-sm">$69.69</p>
+                    </div>
+                  </div>
+                  <div
+                    href="https://www.kindacode.com"
+                    class="flex flex-col bg-white drop-shadow hover:drop-shadow-lg hover:opacity-70 rounded-md"
+                  >
+                    <img
+                      src=" https://www.kindacode.com/wp-content/uploads/2022/07/kindacode-example.png"
+                      alt="Fiction Product"
+                      class="h-36 object-cover rounded-tl-md rounded-tr-md"
+                    />
+
+                    <div class="px-3 py-2">
+                      <h1 class="font-semibold">Product One</h1>
+                      <p class="text-sm">$69.69</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
