@@ -302,14 +302,14 @@ const SideBar = () => {
           </div>
           <div className="w-full">
             <div className="text-gray-700 font-semibold">
-              <div className="relative ">
+              <div className="relative">
                 <h2 className="text-sm mt-1 sm:text-3xl text-center">
                   @malaikatreats
                 </h2>
-                <h2 className="text-xs mt-1 sm:text-m text-center">
-                  Follow us on Instagram
+                <h2 className="text-xs mt-1 sm:text-m mb-5 text-center">
+                  Follow us on Instagram and TikTok
                 </h2>
-                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-10">
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-x-1 gap-y-1">
                   <div
                     href="https://www.kindacode.com"
                     class="flex flex-col bg-white drop-shadow hover:drop-shadow-lg hover:opacity-70 rounded-md"
@@ -319,11 +319,6 @@ const SideBar = () => {
                       alt="Fiction Product"
                       class="h-36 object-cover rounded-tl-md rounded-tr-md"
                     />
-
-                    <div class="px-3 py-2">
-                      <h1 class="font-semibold">Product One</h1>
-                      <p class="text-sm">$69.69</p>
-                    </div>
                   </div>
                   <div
                     href="https://www.kindacode.com"
@@ -334,11 +329,6 @@ const SideBar = () => {
                       alt="Fiction Product"
                       class="h-36 object-cover rounded-tl-md rounded-tr-md"
                     />
-
-                    <div class="px-3 py-2">
-                      <h1 class="font-semibold">Product One</h1>
-                      <p class="text-sm">$69.69</p>
-                    </div>
                   </div>
                   <div
                     href="https://www.kindacode.com"
@@ -349,11 +339,6 @@ const SideBar = () => {
                       alt="Fiction Product"
                       class="h-36 object-cover rounded-tl-md rounded-tr-md"
                     />
-
-                    <div class="px-3 py-2">
-                      <h1 class="font-semibold">Product One</h1>
-                      <p class="text-sm">$69.69</p>
-                    </div>
                   </div>
                   <div
                     href="https://www.kindacode.com"
@@ -364,11 +349,6 @@ const SideBar = () => {
                       alt="Fiction Product"
                       class="h-36 object-cover rounded-tl-md rounded-tr-md"
                     />
-
-                    <div class="px-3 py-2">
-                      <h1 class="font-semibold">Product One</h1>
-                      <p class="text-sm">$69.69</p>
-                    </div>
                   </div>
                   <div
                     href="https://www.kindacode.com"
@@ -379,11 +359,6 @@ const SideBar = () => {
                       alt="Fiction Product"
                       class="h-36 object-cover rounded-tl-md rounded-tr-md"
                     />
-
-                    <div class="px-3 py-2">
-                      <h1 class="font-semibold">Product One</h1>
-                      <p class="text-sm">$69.69</p>
-                    </div>
                   </div>
                   <div
                     href="https://www.kindacode.com"
@@ -394,11 +369,6 @@ const SideBar = () => {
                       alt="Fiction Product"
                       class="h-36 object-cover rounded-tl-md rounded-tr-md"
                     />
-
-                    <div class="px-3 py-2">
-                      <h1 class="font-semibold">Product One</h1>
-                      <p class="text-sm">$69.69</p>
-                    </div>
                   </div>
                   <div
                     href="https://www.kindacode.com"
@@ -409,11 +379,6 @@ const SideBar = () => {
                       alt="Fiction Product"
                       class="h-36 object-cover rounded-tl-md rounded-tr-md"
                     />
-
-                    <div class="px-3 py-2">
-                      <h1 class="font-semibold">Product One</h1>
-                      <p class="text-sm">$69.69</p>
-                    </div>
                   </div>
                   <div
                     href="https://www.kindacode.com"
@@ -424,11 +389,46 @@ const SideBar = () => {
                       alt="Fiction Product"
                       class="h-36 object-cover rounded-tl-md rounded-tr-md"
                     />
-
-                    <div class="px-3 py-2">
-                      <h1 class="font-semibold">Product One</h1>
-                      <p class="text-sm">$69.69</p>
-                    </div>
+                  </div>
+                  <div
+                    href="https://www.kindacode.com"
+                    class="flex flex-col bg-white drop-shadow hover:drop-shadow-lg hover:opacity-70 rounded-md"
+                  >
+                    <img
+                      src=" https://www.kindacode.com/wp-content/uploads/2022/07/kindacode-example.png"
+                      alt="Fiction Product"
+                      class="h-36 object-cover rounded-tl-md rounded-tr-md"
+                    />
+                  </div>
+                  <div
+                    href="https://www.kindacode.com"
+                    class="flex flex-col bg-white drop-shadow hover:drop-shadow-lg hover:opacity-70 rounded-md"
+                  >
+                    <img
+                      src=" https://www.kindacode.com/wp-content/uploads/2022/07/kindacode-example.png"
+                      alt="Fiction Product"
+                      class="h-36 object-cover rounded-tl-md rounded-tr-md"
+                    />
+                  </div>
+                  <div
+                    href="https://www.kindacode.com"
+                    class="flex flex-col bg-white drop-shadow hover:drop-shadow-lg hover:opacity-70 rounded-md"
+                  >
+                    <img
+                      src=" https://www.kindacode.com/wp-content/uploads/2022/07/kindacode-example.png"
+                      alt="Fiction Product"
+                      class="h-36 object-cover rounded-tl-md rounded-tr-md"
+                    />
+                  </div>
+                  <div
+                    href="https://www.kindacode.com"
+                    class="flex flex-col bg-white drop-shadow hover:drop-shadow-lg hover:opacity-70 rounded-md"
+                  >
+                    <img
+                      src=" https://www.kindacode.com/wp-content/uploads/2022/07/kindacode-example.png"
+                      alt="Fiction Product"
+                      class="h-36 object-cover rounded-tl-md rounded-tr-md"
+                    />
                   </div>
                 </div>
               </div>
