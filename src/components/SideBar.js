@@ -95,10 +95,6 @@ const Menus = [
 
         cName: "sub-nav",
       },
-      {
-        title: "BH CUSTOM GIFT",
-        src: "/bhs/custom",
-      },
     ],
   },
   {
@@ -117,10 +113,6 @@ const Menus = [
         src: "/sb/50ml-bottles",
 
         cName: "sub-nav",
-      },
-      {
-        title: "Custom",
-        src: "/bb/custom",
       },
     ],
   },
